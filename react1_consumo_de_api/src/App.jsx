@@ -1,16 +1,18 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
 import MiAPI from './components/MiApi'
 import Buscador from './components/Buscador'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [search,setSearch] = useState('')
+  const appBuscador = (eventoBuscador) =>{
+    setSearch(eventoBuscador)
+  }
   return (
     <>
-    <Buscador/>
+    <Buscador aBuscar={appBuscador} />
     <div>
-    <MiAPI/>
+    <MiAPI search={search} />
     </div>
     </>
   )
