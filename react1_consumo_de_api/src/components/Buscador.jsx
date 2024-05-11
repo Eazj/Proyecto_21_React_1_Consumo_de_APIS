@@ -14,7 +14,6 @@ function Buscador({aBuscar}){
         <>
         <form onSubmit={enviarBuscador}>
         <input type="text" className="input" value={search} onChange={funcionBuscador} placeholder="Buscar Ciudad..." />
-        <button type="submit">Buscar</button>
         </form>
         </>
     )
