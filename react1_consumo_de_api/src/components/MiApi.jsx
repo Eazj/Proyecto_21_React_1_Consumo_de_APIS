@@ -13,6 +13,7 @@ function MiAPI({ search }) {
       const response = await fetch(url);
       const data = await response.json();
       const days = data.data;
+      days.sort((a, b) => (a.date > b.date ? 1 : -1));
       setInfo(days);
     } catch (error) {
       console.log("error al obtener los datos", error);
