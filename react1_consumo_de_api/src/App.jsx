@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Buscador aBuscar={appBuscador} />
-    <div>
+    <div className='contenedor-mi-api'>
     <MiAPI search={search} />
     </div>
     </>

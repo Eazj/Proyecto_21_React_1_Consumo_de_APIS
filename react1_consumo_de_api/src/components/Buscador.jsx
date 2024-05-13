@@ -13,7 +13,7 @@ function Buscador({aBuscar}){
     return(
         <>
         <form onSubmit={enviarBuscador}>
-        <input type="text" className="input" value={search} onChange={funcionBuscador} placeholder="Buscar Ciudad..." />
+        <input type="text" className="input" value={search} onChange={funcionBuscador} placeholder="Buscar Dia Festivo..." />
         </form>
         </>
     )

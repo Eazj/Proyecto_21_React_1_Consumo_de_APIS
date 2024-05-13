@@ -4,3 +4,30 @@
   padding: 2rem;
   text-align: center;
 }
+.box-container{
+  width: 20vw;
+  border: 6px solid red;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+@keyframes newYearColor {
+  0% { border-color: gold; }
+  33% { border-color: silver; }
+  66% { border-color: black; }
+  100% { border-color: white; }
+}
+
+@keyframes christmasColor {
+  0% { border-color: blue; }
+  33% { border-color: red; }
+  66% { border-color: gold; }
+  100% { border-color: green; }
+}
+.input{
+  text-align: center;
+  width: 20vw;
+  height: 3vh;
+  border-radius: 1rem;
+}
